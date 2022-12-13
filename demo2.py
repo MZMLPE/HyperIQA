@@ -12,7 +12,7 @@ def pil_loader(path):
         return img.convert('RGB')
 
 
-im_paths = ['./Sharpened/sharpened_image_03.png', './Sharpened/sharpened_image_04.png', './Sharpened/sharpened_image_05.png', './Sharpened/sharpened_image_06.png', './Sharpened/sharpened_image_07.png', './Sharpened/sharpened_image_08.png', './Sharpened/sharpened_image_09.png', './Sharpened/sharpened_image_10.png', './Sharpened/sharpened_image_11.png', './Sharpened/sharpened_image_12.png', './Sharpened/sharpened_image_13.png', './Sharpened/sharpened_image_14.png', './Sharpened/sharpened_image_15.png', './Sharpened/sharpened_image_16.png', './Sharpened/sharpened_image_17.png', './Sharpened/sharpened_image_18.png', './Sharpened/sharpened_image_19.png', './Sharpened/sharpened_image_20.png', './Sharpened/sharpened_image_21.png', './Sharpened/sharpened_image_22.png', './Sharpened/sharpened_image_23.png', './Sharpened/sharpened_image_24.png']
+im_paths = ['./Sharpened/sharpened_image_02.png', './Sharpened/sharpened_image_05.png', './Sharpened/sharpened_image_08.png', './Sharpened/sharpened_image_11.png', './Sharpened/sharpened_image_14.png', './Sharpened/sharpened_image_17.png', './Sharpened/sharpened_image_20.png', './Sharpened/sharpened_image_23.png']
 for im_path in im_paths:
   model_hyper = models.HyperNet(16, 112, 224, 112, 56, 28, 14, 7).cuda()
   model_hyper.train(False)

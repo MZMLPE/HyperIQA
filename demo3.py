@@ -12,7 +12,7 @@ def pil_loader(path):
         return img.convert('RGB')
 
 
-im_paths = ['./Denoised/denoised_image_01.png', './Denoised/denoised_image_02.png', './Denoised/denoised_image_03.png', './Denoised/denoised_image_04.png', './Denoised/denoised_image_05.png', './Denoised/denoised_image_06.png', './Denoised/denoised_image_07.png', './Denoised/denoised_image_08.png', './Denoised/denoised_image_09.png', './Denoised/denoised_image_10.png', './Denoised/denoised_image_11.png', './Denoised/denoised_image_12.png', './Denoised/denoised_image_13.png', './Denoised/denoised_image_14.png', './Denoised/denoised_image_15.png', './Denoised/denoised_image_16.png', './Denoised/denoised_image_17.png', './Denoised/denoised_image_18.png', './Denoised/denoised_image_19.png', './Denoised/denoised_image_20.png', './Denoised/denoised_image_21.png', './Denoised/denoised_image_22.png', './Denoised/denoised_image_23.png', './Denoised/denoised_image_24.png']
+im_paths = ['./Denoised/denoised_image_03.png', './Denoised/denoised_image_06.png', './Denoised/denoised_image_09.png', './Denoised/denoised_image_12.png', './Denoised/denoised_image_15.png', './Denoised/denoised_image_18.png', './Denoised/denoised_image_21.png', './Denoised/denoised_image_24.png']
 for im_path in im_paths:
   model_hyper = models.HyperNet(16, 112, 224, 112, 56, 28, 14, 7).cuda()
   model_hyper.train(False)

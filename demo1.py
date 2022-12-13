@@ -12,7 +12,7 @@ def pil_loader(path):
         return img.convert('RGB')
 
 
-im_paths = ['./Equalized/equalized_image_01.png', './Equalized/equalized_image_02.png', './Equalized/equalized_image_03.png', './Equalized/equalized_image_04.png', './Equalized/equalized_image_05.png', './Equalized/equalized_image_06.png', './Equalized/equalized_image_07.png', './Equalized/equalized_image_08.png', './Equalized/equalized_image_09.png', './Equalized/equalized_image_10.png', './Equalized/equalized_image_11.png', './Equalized/equalized_image_12.png', './Equalized/equalized_image_13.png', './Equalized/equalized_image_14.png', './Equalized/equalized_image_15.png', './Equalized/equalized_image_16.png', './Equalized/equalized_image_17.png', './Equalized/equalized_image_18.png', './Equalized/equalized_image_19.png', './Equalized/equalized_image_20.png', './Equalized/equalized_image_21.png', './Equalized/equalized_image_22.png', './Equalized/equalized_image_23.png', './Equalized/equalized_image_24.png']
+im_paths = ['./Equalized/equalized_image_01.png', './Equalized/equalized_image_04.png', './Equalized/equalized_image_07.png', './Equalized/equalized_image_10.png', './Equalized/equalized_image_13.png', './Equalized/equalized_image_16.png', './Equalized/equalized_image_19.png', './Equalized/equalized_image_22.png']
 for im_path in im_paths:
   model_hyper = models.HyperNet(16, 112, 224, 112, 56, 28, 14, 7).cuda()
   model_hyper.train(False)
